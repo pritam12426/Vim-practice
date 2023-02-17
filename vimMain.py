@@ -1,6 +1,7 @@
-import os
+import colorama
 import random
 from playsound import playsound
+
 print(' ⬆️ --> k\n', '⬇️ --> j\n', '➡️ --> l\n', '⬅️ --> h')
 
 tole = 0
@@ -14,10 +15,9 @@ while True:
     print(f'\n  **** {l}  ****\n')
     j = input("Inset > ")
 
-    if j == "i":
-        
-        print(f'\n**** Result **** \nTotal attempt > {tole}\nTotal error > {error}\nCorrect attempt > {tole-error}\n******************\n')
-        exit()
+    if j == "i": 
+        exit(f'\n**** Result **** \nTotal attempt > {tole}\nTotal error > {error}\nCorrect attempt > {tole-error}\n******************\n')
+
     elif l == '⬆️' and j.lower() != "k":
         playsound("Error.wav")
         error +=1
