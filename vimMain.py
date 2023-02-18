@@ -1,6 +1,5 @@
-import colorama
-import random
 from playsound import playsound
+import random
 
 print(' ⬆️ --> k\n', '⬇️ --> j\n', '➡️ --> l\n', '⬅️ --> h')
 
