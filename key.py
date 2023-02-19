@@ -1,14 +1,8 @@
 import json
 import os
 import playsound
+import colorama
 import random
-
-# with open("shortKey.json")as read:
-#     shortKey = read.read()
-
-#     print(shortKey)
-
-os.system("clear")
 
 totle = 0
 error = 0
@@ -44,14 +38,17 @@ while True:
     if j.lower().find('exit') == 0:
         os.system("clear")
         exit(f'**** Result **** \nTotal attempt > {totle}\nTotal error > {error}\nCorrect attempt > {totle-error}\n'+"*"*22)
+
     elif j.lower().find("clear") == 0:
         os.system("clear")
+
     elif j != shortKey[a]:
         print('**** 🤬️ ****')
         print(f'Ans > {shortKey[a]}')
         print("=" *len(b))
         playsound.playsound("Error.wav")
         error +=1
+
     else:
         totle +=1
         print("=" *len(b))

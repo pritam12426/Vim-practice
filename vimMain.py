@@ -10,12 +10,11 @@ while True:
     l = ['⬆️', '⬇️', '➡️', '⬅️']
     random.shuffle(l)
     l = l[0]
-    print("-----------------------------------------------")
     print(f'\n  **** {l}  ****\n')
     j = input("Inset > ")
 
     if j == "i": 
-        exit(f'\n**** Result **** \nTotal attempt > {tole}\nTotal error > {error}\nCorrect attempt > {tole-error}\n******************\n')
+        exit(f'\n**** Result **** \nTotal attempt > {tole}\nTotal error > {error}\nCorrect attempt > {tole-error}\n'+'*'*22)
 
     elif l == '⬆️' and j.lower() != "k":
         playsound("Error.wav")
@@ -36,4 +35,6 @@ while True:
         print('\t**** h ****')
         error +=1
 
-    tole +=1
+    else:
+        print('='*5)
+        tole +=1
