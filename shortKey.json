@@ -1,0 +1,11 @@
+{
+    ":wq": "Write and quit",
+	":q!": "quite with out saving",
+    ":q":  "Just quit",
+    ":w":  "Just save",
+    "b":   "Jump back",
+    "w":   "Jump forword",
+    "diw": "Delete Iner word",
+    "dw":  "Delete single word",
+    "nnim .": "Open neo vim"
+}
