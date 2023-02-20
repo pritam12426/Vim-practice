@@ -1,8 +1,12 @@
 import json
 import os
 import playsound
-import colorama
+# import colo
 import random
+
+n = random.randint(1, 99)
+
+os.system("clear")
 
 totle = 0
 error = 0
@@ -15,7 +19,18 @@ keyName = ['Exit with out saving',
            'Jump back',
            'Delete iner word',
            'Delete single word',
-           'Open Neo_vim']
+           'Open Neo_vim here',
+           'Undo',
+           'Delete iner ""', 
+           'Delete iner ()',
+           'Change whole line',
+           'Change iner word',
+           'Jump end of the word',
+           f'Jump to line number {n}',
+           'Jump to ending of the line',
+           'Jump to starting of the line',
+           'Jump to begning of the file',
+           'Jump to ending of the file']
 
 shortKey = [':q!',
             ':wq',
@@ -25,7 +40,23 @@ shortKey = [':q!',
             'b',
             'diw',
             'dw',
-            'nvim .']
+            'nvim .',
+            'u',
+            'di"',
+            'di(',
+            'cc',
+            'ciw',
+            'e',
+            f'g{n}',
+            '0',
+            '$',
+            'gg',
+            'G']
+
+if len(shortKey) != len(keyName):
+    print(f"The len of word {len(keyName)}")
+    print(f"The len of short key {len(shortKey)}")
+    exit("Pls check the key it is not propre")
 
 while True:
     a = random.randint(0, len(keyName)-1)
@@ -45,10 +76,10 @@ while True:
     elif j != shortKey[a]:
         print('**** 🤬️ ****')
         print(f'Ans > {shortKey[a]}')
-        print("=" *len(b))
+        print("=" * len(b))
         playsound.playsound("Error.wav")
         error +=1
 
     else:
         totle +=1
-        print("=" *len(b))
+        print("=" * len(b))
