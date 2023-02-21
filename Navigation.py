@@ -1,5 +1,8 @@
+import os
+
 from playsound import playsound
 import random
+from os import system
 
 print(' ⬆️ --> k\n', '⬇️ --> j\n', '➡️ --> l\n', '⬅️ --> h')
 
@@ -13,9 +16,12 @@ while True:
     print(f'\n  **** {l}  ****\n')
     j = input("Inset > ")
 
-    if j == "i": 
+    if j is "exit":
+        os.system("clear")
         exit(f'\n**** Result **** \nTotal attempt > {tole}\nTotal error > {error}\nCorrect attempt > {tole-error}\n'+'*'*22)
 
+    elif j is "clear":
+        system("clear")
     elif l == '⬆️' and j.lower() != "k":
         playsound("Error.wav")
         error +=1

@@ -1,7 +1,7 @@
 import json
 import os
 import playsound
-# import colo
+import colorsys
 import random
 
 n = random.randint(1, 99)
@@ -47,7 +47,7 @@ shortKey = [':q!',
             'cc',
             'ciw',
             'e',
-            f'g{n}',
+            f'{n}g',
             '0',
             '$',
             'gg',
@@ -58,7 +58,7 @@ if len(shortKey) != len(keyName):
     print(f"The len of short key {len(shortKey)}")
     exit("Pls check the key it is not propre")
 
-while True:
+while(True):
     a = random.randint(0, len(keyName)-1)
     l = keyName[a]
 
