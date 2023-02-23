@@ -1,8 +1,11 @@
+from time import sleep
 import json
 import os
 import playsound
-import colorsys
+from colorama import Fore, init, Back
 import random
+
+init(autoreset=True)
 
 os.system("clear")
 
@@ -16,24 +19,27 @@ while(True):
     jsonKey = list(json_file.keys())
     jsonKey = random.choice(jsonKey)
 
-    b = (f'**** {jsonKey} ****')
-    print(b)
+    b = (f'**** {Fore.GREEN+jsonKey}')
+    print(b,end=" ****\n")
     j = input("Inset > ")
 
     if j.lower().find('exit') == 0:
         os.system("clear")
-        exit(f'**** Result **** \nTotal attempt > {totle}\nTotal error > {error}\nCorrect attempt > {totle-error}\n'+"*"*22)
+        exit(f'==== Result ==== \n{Fore.YELLOW}Total attempt > {totle}\n{Fore.RED}Total error > {error}\n{Fore.GREEN}Correct attempt > {totle-error}\n{Fore.WHITE}'+"_-"*11 +':)')
 
     elif j.lower().find("clear") == 0:
+        os.system("clear") 
+        print(f'==== Result ====\n{Fore.YELLOW}Total attempt > {totle}\n{Fore.RED}Total error > {error}\n{Fore.GREEN}Correct attempt > {totle-error}\n{Fore.WHITE}'+"-_"*11)
+        sleep(2)
         os.system("clear")
 
     elif j != json_file[jsonKey]:
         print('**** 🤬️ ****')
-        print(f'Ans > {json_file[jsonKey]}')
-        print("=" * len(b))
+        print(f'Ans > {Fore.YELLOW + json_file[jsonKey]}')
+        print(Fore.RED + "=" * len(b))
         playsound.playsound("Error.wav")
         error +=1
         totle +=1
     else:
         totle +=1
-        print("=" * len(b))
+        print(Fore.CYAN+ "=" * len(b))
