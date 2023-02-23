@@ -4,7 +4,7 @@
     "Just quit":             ":q",
     "Just save":             ":w",
     "Jump back":             "b",
-    "Jump for word":         "w",
+    "Jump forword":         "w",
     "Jump ending of the word":"e",
     "Delete Iner word":      "diw",
     "Delete singel word":    "dw",
@@ -12,6 +12,6 @@
     "Change the whole line": "cc",
     "Change iner word":      "ciw",
     "Undo":                  "u",
-    "Delete inside (<|word|>)":      "di(",
-    "Delete inside '<|word|>'":      "di'"
+    "Delete inside ( )":      "di(",
+    "Delete inside ' '":      "di'"
 }

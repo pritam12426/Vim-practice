@@ -33,7 +33,7 @@ while(True):
         print("=" * len(b))
         playsound.playsound("Error.wav")
         error +=1
-
+        totle +=1
     else:
         totle +=1
         print("=" * len(b))

@@ -40,6 +40,7 @@ while True:
         playsound("Error.wav")    
         print('\t**** h ****')
         error +=1
+        tole +=1
 
     else:
         print('='*5)
