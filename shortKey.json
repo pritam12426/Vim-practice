@@ -13,5 +13,7 @@
     "Change iner word":      "ciw",
     "Undo":                  "u",
     "Delete inside ( )":      "di(",
-    "Delete inside ' '":      "di'"
+    "Delete inside ' '":      "di'",
+	"Jump to the end of the file": "gg",
+	"Jump to the beginning of the file": "G" 
 }
