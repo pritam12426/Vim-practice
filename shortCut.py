@@ -34,8 +34,8 @@ while(True):
         os.system("clear")
 
     elif j != json_file[jsonKey]:
-        print('**** 🤬️ ****')
-        print(f'Ans > {Fore.YELLOW + json_file[jsonKey]}')
+        print(Fore.RED + '**** Error ****')
+        print(f'{Fore.CYAN}Correct key is > {json_file[jsonKey]}')
         print(Fore.RED + "=" * len(b))
         playsound.playsound("Error.wav")
         error +=1
