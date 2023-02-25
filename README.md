@@ -14,11 +14,12 @@
 ```bash
 git clone https://github.com/pritam12426/Vim-practice.git
 cd Vim-practice
-python shto
+python shortCut.py
 ```
 ## :page_with_curl: **Important note**
 * If you wants to exit the program Inset `exit` while Inseting.
 * If you wants to clear the terminal Inset `clear` while Inseting.
+* If you have any shortcut of vim and that shortcut is not in ```VSI``` Just open ```shortKey.json``` ```and add what is would shortcut do``` and ```shortKey```
 
 ## :traffic_light: **Known issues**
 - [x] You have to use terminal to run this program.
