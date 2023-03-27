@@ -14,6 +14,12 @@
     "Undo":                  "u",
     "Delete inside ( )":      "di(",
     "Delete inside ' '":      "di'",
-	"Jump to the end of the file": "gg",
-	"Jump to the beginning of the file": "G" 
+	"Jump to the end of the file": "G",
+	"Jump to the beginning of the file": "gg",
+    "Highlight a word in whole file":"?",
+    "Find a word in the whole file":"/",
+    "Jump to the new same word":"N",
+    "Auto indent":"==",
+    "Jump to end of the line":"$",
+    "Move the active line to center of the screen":"zz"
 }

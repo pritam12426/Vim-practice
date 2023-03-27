@@ -7,7 +7,7 @@ import random
 
 init(autoreset=True)
 
-#os.system("clear")
+os.system("clear")
 
 totle = 0
 error = 0
@@ -29,8 +29,8 @@ class Key:
 
         elif j.lower().find("clear") == 0:
             os.system("clear")
-            print(f'==== Result ====\n{Fore.YELLOW}Total attempt > {totle}\n{Fore.RED}Total error > {error}\n{Fore.GREEN}Correct attempt > {totle-error}\n{Fore.WHITE}'+"-_"*11)
-            sleep(2)
+            #print(f'==== Result ====\n{Fore.YELLOW}Total attempt > {totle}\n{Fore.RED}Total error > {error}\n{Fore.GREEN}Correct attempt > {totle-error}\n{Fore.WHITE}'+"-_"*11)
+            #sleep(2)
             os.system("clear")
 
         elif j != json_file[jsonKey]:
