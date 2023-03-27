@@ -21,5 +21,10 @@
     "Jump to the new same word":"N",
     "Auto indent":"==",
     "Jump to end of the line":"$",
-    "Move the active line to center of the screen":"zz"
+    "Move the active line to center of the screen":"zz",
+    "Start wrriting for ending of the line":"A",
+    "Start wrriting for beging of the line":"I",
+    "Past under the line":"P",
+    "Past ubbeb the line":"p",
+    "Jump to ending of the line":"0"
 }
